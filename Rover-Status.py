@@ -13,11 +13,9 @@ battery_usage = 0.027
 speed = 1.5
 travel_parameters = 0-90
 #Calculation
-cos = math.cos(angle_radians)
-sin = math.sin(angle_radians)
 distance = speed*time
 battery_consumed = battery_usage*time
-battery_ramaining = battery_total-battery_consumed
+battery_remaining = battery_total-battery_consumed
 horizontal = distance*math.cos(angle_radians)
 vertical = distance*math.sin(angle_radians)
 
@@ -27,4 +25,4 @@ print(f"Distance Travelled: {distance}")
 print(f"Horizontal Movement: {horizontal:.2f}")
 print(f"Vertical Movement: {vertical:.2f}")
 print(f"Battery Usage: {battery_consumed:.2f}")
-print(f"Battery Remaining: {battery_ramaining}")
+print(f"Battery Remaining: {battery_remaining}")
