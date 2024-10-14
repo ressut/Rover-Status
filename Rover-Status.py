@@ -29,7 +29,7 @@ print(f"Horizontal Movement: {horizontal:.2f} meters")
 print(f"Vertical Movement: {vertical:.2f} meters")
 print(f"Battery Usage: {battery_consumed:.2f}%")
 print(f"Battery Remaining: {battery_remaining:.2f}%")
-if (battery_remaining < 0) and (battery_remaining <= 10):
+if battery_remaining > 0 and battery_remaining <= 10:
     print(f"Battery Remaining is low!")
-elif (battery_remaining <= 0):
+elif battery_remaining <= 0:
     print(f"The Rover battery needs Re-charge!")
