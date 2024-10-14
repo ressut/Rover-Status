@@ -10,7 +10,7 @@ battery_usage = 0.027 # battery comsume per second
 time_to_die = battery_total/battery_usage
 time = float(input("Enter the time of the travel in seconds:"))
 if (time > time_to_die):
-    print("The Rover Battery will need to be Re-charded after reaching the final destination")
+    print(f"The Rover Battery will need to be Re-charded after reaching {time_to_die:.2f} seconds into the mission.") 
     exit()
 #Converting Angle
 angle_radians = math.radians(angle_degrees)
