@@ -18,7 +18,7 @@ speed = 1.5 # meters/second
 #Calculation
 distance = speed*time
 battery_consumed = battery_usage*time
-battery_remaining = round(battery_total-battery_consumed, 2) #value needed to be rounded in order to elif to work
+battery_remaining = round(battery_total-battery_consumed, 2) #value needed to be rounded in order for elif to work
 horizontal = distance*math.sin(angle_radians)
 vertical = distance*math.cos(angle_radians)
 #Output
