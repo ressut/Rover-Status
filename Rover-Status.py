@@ -1,5 +1,4 @@
 import math
-
 #Input
 angle_degrees = float(input("Enter the Angle between 0° and 90°:"))
 if (angle_degrees > 90) or (angle_degrees < 0):
